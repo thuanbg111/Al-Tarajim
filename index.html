@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Home — Al Tarajim</title>
+
+  <link rel="stylesheet" href="assets/styles.css"/>
+  <link rel="icon" href="images/logo.png">
+
+  <meta name="description" content="Al Tarajim — 501(c)(3) nonprofit. EIN 88-2938721. Language access: translation, interpretation, education, navigation.">
+</head>
+<body>
+
+<header class="header">
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="Home"><img src="images/logo.png" alt="Al Tarajim logo"></a>
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="links" aria-label="Main">
+      <a href="about.html">About</a>
+      <a href="programs.html">Programs</a>
+      <a href="governance.html">Governance</a>
+      <a href="contact.html" class="btn btn-primary">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero"><div class="container inner">
+    <span class="badge">Nonprofit Public Benefit • 501(c)(3) • EIN 88-2938721</span>
+    <h1><span class="upper-strong">Al Tarajim</span></h1>
+    <p>We are a California nonprofit public benefit corporation. Our work is to <strong>expand language access for immigrant and refugee communities through translation, interpretation, education, and navigation to social services</strong>.</p>
+    <p><a class="btn btn-primary" href="about.html">Learn more</a> <a class="btn" href="programs.html">See programs</a></p>
+  </div></section>
+
+  <section class="section container split">
+    <div>
+      <h2>What We Do</h2>
+      <p>Language should never be a barrier to essential services.</p>
+      <ul>
+        <li>Certified translation for documents and applications</li>
+        <li>On‑site & remote interpretation for clinics, schools, and agencies</li>
+        <li>Workshops that teach rights, responsibilities, and access to care</li>
+      </ul>
+    </div>
+    <figure class="figure"><img src="images/hero.jpg" alt="Community language services in action"></figure>
+  </section>
+
+  <section class="section container grid-3">
+    <article class="card"><img src="images/translation.jpg" alt="Translation Services"><div class="card-body">
+      <h3>Translation</h3><p>Accurate, culturally aware document translation for families and service partners.</p></div></article>
+    <article class="card"><img src="images/interpretation.jpg" alt="Interpretation"><div class="card-body">
+      <h3>Interpretation</h3><p>Consecutive & simultaneous interpretation—on site or virtual—by trained volunteers and staff.</p></div></article>
+    <article class="card"><img src="images/navigation.jpg" alt="Education & Navigation"><div class="card-body">
+      <h3>Education &amp; Navigation</h3><p>Workshops, helpline, and referrals that help newcomers navigate health, school, and legal systems.</p></div></article>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container grid">
+    <div>
+      <img src="images/logo.png" alt="" style="width:160px;height:auto;margin-bottom:.5rem;">
+      <div class="small">© <span id="year"></span> Al Tarajim</div>
+      <div class="small">California Nonprofit Public Benefit • 501(c)(3)</div>
+      <div class="small">EIN: 88-2938721</div>
+    </div>
+    <div>
+      <div class="small"><strong>Mission:</strong><br>We expand language access for immigrant and refugee communities through translation, interpretation, education, and navigation to social services.</div>
+    </div>
+    <div>
+      <div class="small">
+        <strong>Address:</strong><br>6972 FRASER FIR DR<br>FONTANA, CA 92336<br>
+        <strong>Email:</strong> <a href="mailto:contact@altarajim.site">contact@altarajim.site</a><br>
+        <strong>Phone:</strong> <a href="tel:+17432478569">+17432478569</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<script>
+  const b=document.querySelector('.menu-toggle'), l=document.querySelector('.links');
+  if(b&&l){b.addEventListener('click',()=>{const o=getComputedStyle(l).display==='flex';l.style.display=o?'none':'flex';b.setAttribute('aria-expanded',o?'false':'true');});}
+  const y=document.getElementById('year'); if(y) y.textContent=new Date().getFullYear();
+</script>
+
+</body>
+</html]

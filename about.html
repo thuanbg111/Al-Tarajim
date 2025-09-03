@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>About — Al Tarajim</title>
+
+  <link rel="stylesheet" href="assets/styles.css"/>
+  <link rel="icon" href="images/logo.png">
+
+  <meta name="description" content="Al Tarajim — California 501(c)(3) nonprofit. EIN 88-2938721.">
+</head>
+<body>
+
+<header class="header">
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="Home"><img src="images/logo.png" alt="Al Tarajim logo"></a>
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="links" aria-label="Main">
+      <a href="about.html">About</a>
+      <a href="programs.html">Programs</a>
+      <a href="governance.html">Governance</a>
+      <a href="contact.html" class="btn btn-primary">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="section container split">
+  <div>
+    <h1>About Al Tarajim</h1>
+    <p><strong>Al Tarajim</strong> is organized under California’s Nonprofit Public Benefit Corporation Law and operates for <strong>public</strong> and <strong>charitable</strong> purposes as a recognized <strong>501(c)(3)</strong> (EIN <strong>88-2938721</strong>).</p>
+    <p>Our focus is language access: translation, interpretation, and education that open doors to healthcare, schools, jobs, and justice for limited‑English‑proficient neighbors.</p>
+    <ul class="small">
+      <li>No substantial part of our activities involves lobbying or political campaigning.</li>
+      <li>Assets are irrevocably dedicated to charitable and educational purposes.</li>
+      <li>Upon dissolution, remaining assets go to a similar 501(c)(3).</li>
+    </ul>
+  </div>
+  <figure class="figure"><img src="images/about.jpg" alt="About our mission"></figure>
+</main>
+
+<section class="section container grid-3">
+  <div class="card"><div class="card-body">
+    <strong>Principal Office</strong>
+    <p class="small">6972 FRASER FIR DR, FONTANA, CA 92336</p>
+  </div></div>
+  <div class="card"><div class="card-body">
+    <strong>Agent for Service of Process</strong>
+    <p class="small">Muhammad Ali</p>
+  </div></div>
+  <div class="card"><div class="card-body">
+    <strong>Focus Areas</strong>
+    <p class="small">Translation • Interpretation • Education</p>
+  </div></div>
+</section>
+
+<footer class="footer">
+  <div class="container grid">
+    <div>
+      <img src="images/logo.png" alt="" style="width:160px;height:auto;margin-bottom:.5rem;">
+      <div class="small">© <span id="year"></span> Al Tarajim</div>
+      <div class="small">California Nonprofit Public Benefit • 501(c)(3)</div>
+      <div class="small">EIN: 88-2938721</div>
+    </div>
+    <div>
+      <div class="small"><strong>Mission:</strong><br>We expand language access for immigrant and refugee communities through translation, interpretation, education, and navigation to social services.</div>
+    </div>
+    <div>
+      <div class="small">
+        <strong>Address:</strong><br>6972 FRASER FIR DR<br>FONTANA, CA 92336<br>
+        <strong>Email:</strong> <a href="mailto:contact@altarajim.site">contact@altarajim.site</a><br>
+        <strong>Phone:</strong> <a href="tel:+17432478569">+17432478569</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<script>
+  const b=document.querySelector('.menu-toggle'), l=document.querySelector('.links');
+  if(b&&l){b.addEventListener('click',()=>{const o=getComputedStyle(l).display==='flex';l.style.display=o?'none':'flex';b.setAttribute('aria-expanded',o?'false':'true');});}
+  const y=document.getElementById('year'); if(y) y.textContent=new Date().getFullYear();
+</script>
+
+</body>
+</html]
